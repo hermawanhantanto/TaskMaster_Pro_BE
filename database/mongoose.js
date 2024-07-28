@@ -8,7 +8,7 @@ const getConnection = async () => {
       return connection;
     }
 
-    connection = await mongoose.connect("mongoose://localhost:27017/tasks");
+    connection = await mongoose.connect("mongodb://localhost:27017/tasks");
     return connection;
   } catch (error) {
     console.log(error);
